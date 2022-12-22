@@ -18,9 +18,21 @@ function total(a:unknown,b:unknown) : unknown {
     }
     throw new Error("Not support this type")
 }
-console.log(total(100,100))
-console.log(total("100" , "100"))
+
+
+const add = (...number : number[]) =>{
+    console.log(number)
+}
+
+add(1,2,3,4,5,6,7,8,9,10)
+
+
+
+
+
 
 funcDef();
 funcVoid("hello");
 console.log(sum(100,200));
+console.log(total(100,100))
+console.log(total("100" , "100"))
