@@ -7,6 +7,20 @@ const funcVoid = (text:string) :void =>{
 const funcDef =  (text:string = "no Paramiter") : void =>{
     console.log(`${text}`);
 }
+function total(a:number, b:number) : number
+function total(a:string, b:string) : string
+function total(a:unknown,b:unknown) : unknown {
+    if (typeof a == "number" && typeof b == "number"){
+        return a+b
+    }
+    if (typeof a == "string" && typeof b == "string"){
+        return parseInt(a) + parseInt(b)
+    }
+    throw new Error("Not support this type")
+}
+console.log(total(100,100))
+console.log(total("100" , "100"))
+
 funcDef();
 funcVoid("hello");
 console.log(sum(100,200));
