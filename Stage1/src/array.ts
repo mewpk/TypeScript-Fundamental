@@ -14,3 +14,8 @@ employee.push({
     name : "jack" , 
     salary : 20000
 })
+
+const colors : string[] = ["Red" , "Green" , "Blue"]
+const [red , green, blue]  = colors
+
+console.log(red)

@@ -1,0 +1,5 @@
+type httpStatusCode = [number,string]
+const statusCode :[string,number] = ["Ok" , 200]
+const goodStatus :[code : number , status : string]  = [200 , "OK"]
+const notFound : [code : number  ,status : string] = [404 , "NotFound"]
+const badReq  : httpStatusCode = [400 , "Bad Request"]
